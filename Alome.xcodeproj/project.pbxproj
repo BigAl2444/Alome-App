@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FE2D51A20BD62F600781DB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FE2D51920BD62F600781DB8 /* GoogleService-Info.plist */; };
 		3FEA76B320BD61300070A869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA76B220BD61300070A869 /* AppDelegate.swift */; };
 		3FEA76B520BD61300070A869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA76B420BD61300070A869 /* ViewController.swift */; };
 		3FEA76B820BD61300070A869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA76B620BD61300070A869 /* Main.storyboard */; };
 		3FEA76BA20BD61330070A869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA76B920BD61330070A869 /* Assets.xcassets */; };
 		3FEA76BD20BD61330070A869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEA76BB20BD61330070A869 /* LaunchScreen.storyboard */; };
+		A1F0BED7D33D56C7B48E9EF6 /* Pods_Alome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F96A01F2572B268CCE75F2D /* Pods_Alome.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FE2D51920BD62F600781DB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FEA76AF20BD61300070A869 /* Alome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEA76B220BD61300070A869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FEA76B420BD61300070A869 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		3FEA76B920BD61330070A869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FEA76BC20BD61330070A869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FEA76BE20BD61330070A869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F96A01F2572B268CCE75F2D /* Pods_Alome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5682EF8EA48209F64320B1C8 /* Pods-Alome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alome/Pods-Alome.release.xcconfig"; sourceTree = "<group>"; };
+		7BF32EBE8F9C3B7C0352C4CC /* Pods-Alome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alome/Pods-Alome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F0BED7D33D56C7B48E9EF6 /* Pods_Alome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				3FEA76B120BD61300070A869 /* Alome */,
 				3FEA76B020BD61300070A869 /* Products */,
+				45154A89B054429FF915B124 /* Pods */,
+				A99123776622DAD0D7630E3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +68,27 @@
 				3FEA76B620BD61300070A869 /* Main.storyboard */,
 				3FEA76B920BD61330070A869 /* Assets.xcassets */,
 				3FEA76BB20BD61330070A869 /* LaunchScreen.storyboard */,
+				3FE2D51920BD62F600781DB8 /* GoogleService-Info.plist */,
 				3FEA76BE20BD61330070A869 /* Info.plist */,
 			);
 			path = Alome;
+			sourceTree = "<group>";
+		};
+		45154A89B054429FF915B124 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BF32EBE8F9C3B7C0352C4CC /* Pods-Alome.debug.xcconfig */,
+				5682EF8EA48209F64320B1C8 /* Pods-Alome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A99123776622DAD0D7630E3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F96A01F2572B268CCE75F2D /* Pods_Alome.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FEA76C120BD61330070A869 /* Build configuration list for PBXNativeTarget "Alome" */;
 			buildPhases = (
+				F5D270B1C8CE898B3FB0E427 /* [CP] Check Pods Manifest.lock */,
 				3FEA76AB20BD61300070A869 /* Sources */,
 				3FEA76AC20BD61300070A869 /* Frameworks */,
 				3FEA76AD20BD61300070A869 /* Resources */,
+				0B044B645763D41238A6CF64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FEA76BD20BD61330070A869 /* LaunchScreen.storyboard in Resources */,
+				3FE2D51A20BD62F600781DB8 /* GoogleService-Info.plist in Resources */,
 				3FEA76BA20BD61330070A869 /* Assets.xcassets in Resources */,
 				3FEA76B820BD61300070A869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B044B645763D41238A6CF64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Alome/Pods-Alome-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alome/Pods-Alome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D270B1C8CE898B3FB0E427 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FEA76AB20BD61300070A869 /* Sources */ = {
@@ -278,6 +353,7 @@
 		};
 		3FEA76C220BD61330070A869 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF32EBE8F9C3B7C0352C4CC /* Pods-Alome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +372,7 @@
 		};
 		3FEA76C320BD61330070A869 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5682EF8EA48209F64320B1C8 /* Pods-Alome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
