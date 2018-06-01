@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F979EC220C0DAFB006B474F /* ViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F979EC120C0DAFB006B474F /* ViewControllerSettings.swift */; };
+		3FB0368A20C0C99C0069463D /* ViewControllerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB0368920C0C99C0069463D /* ViewControllerLogin.swift */; };
 		3FE2D51A20BD62F600781DB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FE2D51920BD62F600781DB8 /* GoogleService-Info.plist */; };
 		3FEA76B320BD61300070A869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA76B220BD61300070A869 /* AppDelegate.swift */; };
 		3FEA76B520BD61300070A869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEA76B420BD61300070A869 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F979EC120C0DAFB006B474F /* ViewControllerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSettings.swift; sourceTree = "<group>"; };
+		3FB0368920C0C99C0069463D /* ViewControllerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLogin.swift; sourceTree = "<group>"; };
 		3FE2D51920BD62F600781DB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FEA76AF20BD61300070A869 /* Alome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEA76B220BD61300070A869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			children = (
 				3FEA76B220BD61300070A869 /* AppDelegate.swift */,
 				3FEA76B420BD61300070A869 /* ViewController.swift */,
+				3FB0368920C0C99C0069463D /* ViewControllerLogin.swift */,
+				3F979EC120C0DAFB006B474F /* ViewControllerSettings.swift */,
 				3FEA76B620BD61300070A869 /* Main.storyboard */,
 				3FEA76B920BD61330070A869 /* Assets.xcassets */,
 				3FEA76BB20BD61330070A869 /* LaunchScreen.storyboard */,
@@ -212,6 +218,8 @@
 			files = (
 				3FEA76B520BD61300070A869 /* ViewController.swift in Sources */,
 				3FEA76B320BD61300070A869 /* AppDelegate.swift in Sources */,
+				3FB0368A20C0C99C0069463D /* ViewControllerLogin.swift in Sources */,
+				3F979EC220C0DAFB006B474F /* ViewControllerSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
