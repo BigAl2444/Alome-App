@@ -11,11 +11,8 @@ import FirebaseAuth
 
 class ViewControllerLogin: UIViewController {
     
-    
-
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
-    
     @IBAction func loginButton(_ sender: UIButton) {
             
             
@@ -26,8 +23,6 @@ class ViewControllerLogin: UIViewController {
             
             let password = passwordText.text
             
-            
-            
             //Authenticate and login with firebase
             
             Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
@@ -37,16 +32,11 @@ class ViewControllerLogin: UIViewController {
                 if let error = error {
                     
                     //Present the error alert
-                    
-                    print(error)
+                    self.errorAlert(errorMessage: error.localizedDescription)
                     
                 } else {
-                    
-                    //Successful Login
-                    
-                    print("Successful Login")
-                    
-                    //Segue to the next view controller
+
+                    //Segue to the main view controller
                     
                     self.performSegue(withIdentifier: "toMainPage", sender: nil)
                     
@@ -56,8 +46,14 @@ class ViewControllerLogin: UIViewController {
             
         }
         
+    func errorAlert(errorMessage:String){
+        let alert = UIAlertController(title: "Error", message:errorMessage, preferredStyle: UIAlertControllerStyle.alert)
         
-        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in alert.dismiss(animated: true, completion:nil)
+            // Put code here do do stuff when Ok pressed
+        }))
+        self.present(alert, animated: true, completion:nil )
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
