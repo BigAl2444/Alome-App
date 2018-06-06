@@ -35,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                         <connections>
                                             <action selector="Email:" destination="iL4-Kl-sLZ" eventType="editingDidEnd" id="i9P-ab-HFU"/>
                                             <action selector="emailInput:" destination="iL4-Kl-sLZ" eventType="editingDidEnd" id="Ghk-Na-50U"/>
@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="56" width="280" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                         <connections>
                                             <action selector="passwordText:" destination="iL4-Kl-sLZ" eventType="editingDidEnd" id="Kg1-jo-kCA"/>
                                         </connections>
@@ -409,13 +409,13 @@
                                         <rect key="frame" x="0.0" y="163" width="280" height="102"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unlock" translatesAutoresizingMaskIntoConstraints="NO" id="Ig2-sj-JxR">
-                                                <rect key="frame" x="0.0" y="20" width="62.5" height="62"/>
+                                                <rect key="frame" x="0.0" y="20" width="62" height="62"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ig2-sj-JxR" secondAttribute="height" multiplier="1:1" constant="1" id="d4w-cs-qoV"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The unlocked Icon shows that the door to the house is unlocked." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLQ-8D-g7n">
-                                                <rect key="frame" x="82.5" y="20.5" width="197.5" height="61"/>
+                                                <rect key="frame" x="82" y="20.5" width="198" height="61"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>

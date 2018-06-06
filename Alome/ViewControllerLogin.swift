@@ -13,42 +13,25 @@ class ViewControllerLogin: UIViewController {
     
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
-    @IBAction func loginButton(_ sender: UIButton) {
-            
-            
-            
-            //Define the email an password variables with the data that is inside the fields that reference with themselves
-            
-            let email = emailText.text
-            
-            let password = passwordText.text
-            
-            //Authenticate and login with firebase
-            
-            Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
-                
-                //Check if there is and error and perform each path
-                
-                if let error = error {
-                    
-                    //Present the error alert
-                    self.errorAlert(errorMessage: error.localizedDescription)
-                    
-                } else {
-
-                    //Segue to the main view controller
-                    
-                    self.performSegue(withIdentifier: "toMainPage", sender: nil)
-                    
-                }
-                
+    @IBAction func loginButton(_ sender: UIButton) {    //exicutes when the login button is pressed
+        
+        // sets the text in the fields to their variables
+        let email = emailText.text
+        let password = passwordText.text
+        
+        //Authenticate and login with firebase
+        Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
+            if let error = error {
+                self.errorAlert(errorMessage: error.localizedDescription)   //calls the errorAlert function and presents the error message
+            } else {
+                self.performSegue(withIdentifier: "toMainPage", sender: nil)    //Segue to the main view controller
             }
-            
         }
+    }
         
-    func errorAlert(errorMessage:String){
+    func errorAlert(errorMessage:String){   //displays an alert
+        
         let alert = UIAlertController(title: "Error", message:errorMessage, preferredStyle: UIAlertControllerStyle.alert)
-        
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action) in alert.dismiss(animated: true, completion:nil)
             // Put code here do do stuff when Ok pressed
         }))
